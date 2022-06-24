@@ -1,9 +1,11 @@
 <template>
-  <Tutorial />
+  <main>
+    Page Index
+  </main>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'PageIndex'
 }
 </script>
