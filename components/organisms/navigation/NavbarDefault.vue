@@ -2,7 +2,9 @@
   <Container tag="nav" class="navbar navbar--default">
     <section>
       <NuxtLink :to="{ name: 'index' }">
-        <span class="title">TheNuxtBlog</span>
+        <p class="title">
+          <NuxtLogo /> TheNuxtBlog
+        </p>
       </NuxtLink>
     </section>
     <section>
@@ -31,6 +33,8 @@ export default {
 
     .title {
       font-size: $font-size-h4;
+      display: flex;
+      place-items: center;
     }
 
     a {
