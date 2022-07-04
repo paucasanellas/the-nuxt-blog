@@ -1,11 +1,11 @@
 <template>
   <main>
-    <h1>The Nuxt Blog</h1>
+    <h1>About Page</h1>
   </main>
 </template>
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageAbout'
 }
 </script>

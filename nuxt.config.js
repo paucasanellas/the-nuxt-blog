@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'the-nuxt-blog',
+    title: 'The Nuxt Blog',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,6 +18,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/styles/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -30,8 +31,17 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    // https://google-fonts.nuxtjs.org/setup/
+    '@nuxtjs/google-fonts'
   ],
+
+  googleFonts: {
+    download: false,
+    families: {
+      Inter: [100, 300, 400, 700, 900]
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
